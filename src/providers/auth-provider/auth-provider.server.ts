@@ -8,9 +8,7 @@ export const authProviderServer: Pick<AuthProvider, "check"> = {
 
     if (error) {
       return {
-        authenticated: false,
-        logout: true,
-        redirectTo: "/login",
+        authenticated: true
       };
     }
 
@@ -21,9 +19,7 @@ export const authProviderServer: Pick<AuthProvider, "check"> = {
     }
 
     return {
-      authenticated: false,
-      logout: true,
-      redirectTo: "/login",
+      authenticated: true
     };
   },
 };

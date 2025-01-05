@@ -25,7 +25,7 @@ export default function CategoryList() {
         headerAlign: "left",
       },
       {
-        field: "title",
+        field: "category_name",
         flex: 1,
         headerName: "Title",
         minWidth: 200,
